@@ -1,0 +1,16 @@
+server:
+  port: 8000
+  
+management: 
+  security:
+    enabled: false
+    
+---
+spring:
+  profiles: dev
+  data:
+    mongodb:
+      ##uri: mongodb://localhost:27017/react
+      host: localhost
+      port: 27017 
+      database: react    
